@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./webserver.js", "use":"@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production",
+      "MY_ENV_VARIABLE": "value"
+    }
+  }
+  
